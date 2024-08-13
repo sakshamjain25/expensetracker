@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- style sheet  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font  -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- icons  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Expense Tracker</h1>
+        <div class="container">
+            <div class="sub-container">
+                <!-- income -->
+                 <div class="total-amount-container">
+                    <h3>Income</h3>
+                    <p class="hide error" id="income-error">Value Cannot be empty or negative
+                    </p>
+                    <input type="number" id="total-amount" placeholder="Enter Total Amount"/>
+                    <button class="submit" id="total-amount-button">Set Income</button>
+                 </div>
+                <!-- Expense  -->
+                 <div class="user-amount-container">
+                    <h3>Expense</h3>
+                    <p class="hide error" id="product-title-error">
+                        Values Cannot be empty                    
+                    </p>
+                    <input type="text" class="product-title" id="product-title" placeholder="Enter Title of Product"/>
+                   <input type="number"  id="user-amount" placeholder="Enter Cost of Product"/>
+                   <button class="submit" id="check-amount">Check Amount</button>
+                 </div>
+            </div>
+            <!-- output  -->
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Income</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Total Expenses</p>
+                    <span id="expenditure-value">0</span>
+                </div>
+                <div>
+                    <p>Balance Left</p>
+                    <span id="balance-amount">0</span>
+                </div>
+            </div>
+        </div>
+        <!-- list  -->
+         <div class="list">
+            <h3>Transaction List</h3>
+            <div class="list-container" id="list"></div>
+         </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Saksham Jain. All rights reserved.</p>
+    </footer>
+
+
+    <!-- script  -->
+    <script src="script.js"></script>
+</body>
+</html>
